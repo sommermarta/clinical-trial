@@ -1,0 +1,111 @@
+---
+title: " Warsztaty badawcze - projekt 1 "
+author: Adam Biesiada, Marcin Kosiński, \newline Piotr Prostko, Marta Sommer
+ 
+ 
+date: 23 Października, 2014
+output:
+  beamer_presentation:
+    theme: "Pittsburgh"
+    colortheme: "whale"
+    fonttheme: "structuresmallcapsserif"
+    highlight: haddock
+    includes:
+      in_header: mystyle.tex
+---
+```{r, echo=FALSE, results='hide'}
+library(knitr)
+opts_chunk$set(comment="", message=FALSE,fig.width=4, fig.height=3,tidy.opts=list(keep.blank.line=TRUE, width.cutoff=40),options(width=70), size='footnotesize', warning=FALSE)
+```
+
+
+
+# Pytanie 1
+
+Test nie-podrzędności
+
+\begin{align*}
+\mathbb{H}_{0}: \ \ \ \ \ \ \ \ & p_{E} - p_{C} \leq - \delta \\
+\mathbb{H}_{A}: \ \ \ \ \ \ \ \ & p_{E} - p_{C} > - \delta
+\end{align*}
+
+
+
+\begin{block}{Motywacja}
+\begin{itemize}
+\item[1)] Podstawową korzyścią jest mniejsza częstotliwość podawania \textsf{SIRENu} w porównaniu do dotychczas dostępnych środków leczenia.  
+\item[2)] Nie ryzykujemy nie odrzucenia hipotezy zerowej w przypadku, gdyby SIREN okazał się dużo efektywniejszy (w przypadku hipotezy równoważności).
+\item[3)] W przypadku hipotezy niepodrzędności test jest jednostronny, dzięki czemu przy ustalonej mocy wystarcza mniejsza próbka w stosunku do testu dwustronnego.
+\end{itemize}
+\end{block}
+
+
+# Pytanie 2
+
+Test na korzyść 
+
+\begin{align*}
+\mathbb{H}_{0}: \ \ \ \ \ \ \ \ & p_{E} - p_{C} \leq 0 \\
+\mathbb{H}_{A}: \ \ \ \ \ \ \ \ & p_{E} - p_{C} > 0
+\end{align*}
+
+\begin{block}{Motywacja}
+\begin{itemize}
+\item[1)] Wymagane jest sprawdzenie czy podanie  \textsf{SIRENu} daje  \textit{lepszy} efekt niż podawanie \textsf{Lucentisu}. 
+\end{itemize}
+\end{block}
+
+# Pytanie 3
+
+\begin{align*}
+\mathbb{H}_{0}: \ \ \ \ \ \ \ \ & n_{E} - n_{C} = 0 \\
+\mathbb{H}_{A}: \ \ \ \ \ \ \ \ & n_{E} - n_{C} < 0
+\end{align*}
+
+
+\begin{block}{Motywacja}
+\begin{itemize}
+\item[1)] Chcemy pokazać, że metoda eksperymentalna daje \textit{lepsze} efekty, czyli wymaga mniejszej liczba zastrzyków.
+\end{itemize}
+\end{block}
+
+
+
+# Pytanie 4
+
+
+\begin{itemize}
+\item utrata przynajmniej 3 lini wizji po roku
+   \begin{itemize}
+    \item[] RR ryzyko względne 
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item czas do utraty co najmniej 3 linii wizji
+   \begin{itemize}
+    \item[] czas do wystąpienia zdarzenia (czas przeżycia) - statystyka testowa testu logrank
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item ostrość wzroku po roku
+   \begin{itemize}
+    \item[] średnia
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item zmiany w ostrości wzroku w stosunku do wartości bazowej po roku
+   \begin{itemize}
+    \item[] średnia
+    \end{itemize}
+\end{itemize}
+
+
+\begin{itemize}
+\item liczba zastrzyków
+   \begin{itemize}
+    \item[] średnia
+    \end{itemize}
+\end{itemize}
