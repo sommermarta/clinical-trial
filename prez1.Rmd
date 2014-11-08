@@ -1,5 +1,5 @@
 ---
-title: " Warsztaty badawcze - projekt 1 "
+title: " Warsztaty badawcze - projekt 1  siema co tam"
 author: Adam Biesiada, Marcin Kosiński, \newline Piotr Prostko, Marta Sommer
  
  
