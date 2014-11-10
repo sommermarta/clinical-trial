@@ -6,9 +6,9 @@ Przyjmujemy wszystkich chorych z cukrzycą do próby klinicznej.
 
 \textcolor{red}{DLACZEGO?}
 
--- Na wysokie ryzyko skutków ubocznych dla tych pacjentów nie wpływa rodzaj podawanego leku (SIREN lub LUCENTIS), tylko sposób jego podawania (zastrzyki w gałkę oczną). Efekty uboczne pojawią się więc zarówno w grupie eksperymentalnej, jak i kontrolnej (w kontrolnej nawet częściej, z racji tego, że LUCENTIS podajemy co miesiąc, a SIREN co trzy miesiące). Nie będziemy więc błędnie wnioskować o nadmiernych efektach ubocznych SIREN-u. 
+- Na wysokie ryzyko skutków ubocznych dla tych pacjentów nie wpływa rodzaj podawanego leku (SIREN lub LUCENTIS), tylko sposób jego podawania (zastrzyki w gałkę oczną). Efekty uboczne pojawią się więc zarówno w grupie eksperymentalnej, jak i kontrolnej (w kontrolnej nawet częściej, z racji tego, że LUCENTIS podajemy co miesiąc, a SIREN co trzy miesiące). Nie będziemy więc błędnie wnioskować o nadmiernych efektach ubocznych SIREN-u. 
 
--- W fazie trzeciej głównie interesuje nas efekt działania leku, a nie jego skutki uboczne. Nie należy więc z powodu ewentualnych skutków ubocznych ograniczać wybór pacjentów.
+- W fazie trzeciej głównie interesuje nas efekt działania leku, a nie jego skutki uboczne. Nie należy więc z powodu ewentualnych skutków ubocznych ograniczać wybór pacjentów.
 
 # PYTANIE 1 b)
 
@@ -18,11 +18,11 @@ Zostawiamy wybór lekarzom.
 
 \textcolor{red}{DLACZEGO?}
 
--- Główną przyczyną wykluczenia starszych ludzi z próby miałoby być większe ryzyko zgonu w czasie jej trwania (z powodu podeszłego wieku, a nie wpływu działania leku, ewentualnie z powodu skutków ubocznych). Lekarz oceni więc, czy pacjent dożyje do końca próby, czy nie.
+- Główną przyczyną wykluczenia starszych ludzi z próby miałoby być większe ryzyko zgonu w czasie jej trwania (z powodu podeszłego wieku, a nie wpływu działania leku, ewentualnie z powodu skutków ubocznych). Lekarz oceni więc, czy pacjent dożyje do końca próby, czy nie.
 
--- Wiek miał wpływ na efekty uboczne leku, a nie na efekt działania leku, nie powinniśmy więc brać go zbytnio pod uwagę w trzeciej fazie próby klinicznej.
+- Wiek miał wpływ na efekty uboczne leku, a nie na efekt działania leku, nie powinniśmy więc brać go zbytnio pod uwagę w trzeciej fazie próby klinicznej.
 
--- Warstwowanie zapobiegnie przypisywaniu SIREN-owi odpowiedzialności za śmierć starszych pacjentów. 
+- Warstwowanie zapobiegnie przypisywaniu SIREN-owi odpowiedzialności za śmierć starszych pacjentów. 
 
 
 

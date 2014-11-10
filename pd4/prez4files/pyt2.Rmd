@@ -6,9 +6,9 @@ Włączylibyśmy do próby chorych ze wszystkimi trzema typami AMD.
 
 \textcolor{red}{DLACZEGO?}
 
--- Dopiero faza trzecia ma na celu pokazanie, czy lek ma wpływ na efekt leczenia, czy nie. Faza druga daje tylko domysły. Warto więc formalnie sprawdzić wpływ SIREN-u na chorych ze wszystkimi przema typami AMD.
+- Dopiero faza trzecia ma na celu pokazanie, czy lek ma wpływ na efekt leczenia, czy nie. Faza druga daje tylko domysły. Warto więc formalnie sprawdzić wpływ SIREN-u na chorych ze wszystkimi przema typami AMD.
 
--- Możemy powarstwować ze względu na typ choroby. Byłyby tu tylko trzy warstwy, czyli dostalibyśmy dużo dodatkowych informacji małym kosztem.
+- Możemy powarstwować ze względu na typ choroby. Byłyby tu tylko trzy warstwy, czyli dostalibyśmy dużo dodatkowych informacji małym kosztem.
 
 # PYTANIE 2 b)
 
@@ -18,4 +18,4 @@ Ustalemy minimalną liczbę pacjentów w każdej warstwie (każda warstwa liczy�
 
 \textcolor{red}{DLACZEGO?}
 
--- Gdyby się zdarzyło, że do którejś z warstw nie trafiła żadna osoba (lub zbyt mała liczba osób), to nie moglibyśmy wtedy wnioskować o wpływie SIREN-u na tę grupę pacjentów.
+- Gdyby się zdarzyło, że do którejś z warstw nie trafiła żadna osoba (lub zbyt mała liczba osób), to nie moglibyśmy wtedy wnioskować o wpływie SIREN-u na tę grupę pacjentów.
