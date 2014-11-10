@@ -1,0 +1,80 @@
+---
+title: " Warsztaty badawcze - projekt 2"
+author: Adam Biesiada, Marcin Kosiński, \newline Piotr Prostko, Marta Sommer
+ 
+ 
+date: 24 Października, 2014
+output:
+  beamer_presentation:
+    theme: "Pittsburgh"
+    colortheme: "rose"
+    fonttheme: "structuresmallcapsserif"
+    highlight: haddock
+    includes:
+      in_header: mystyle.tex
+---
+```{r, echo=FALSE}
+library(knitr)
+opts_chunk$set(comment="", message=FALSE,fig.width=4, fig.height=3,tidy.opts=list(keep.blank.line=TRUE, width.cutoff=40),options(width=70), size='footnotesize', warning=FALSE)
+```
+
+
+
+# 1) Grupa kontrolna
+
+- Stosowanie \textsf{Avastinu} jako leku referencyjnego, wymaga uzyskania zgody IRB (ethics commity). Aby mieć pewność zaakceptowania wyniku próby klinicznej, stosujemy \textsf{Lucentis}.
+- Gdyby jednak udało się uzyskać zgodę IRB na stosowanie \textsf{Avastinu} w grupie referencyjnej przed zakończeniem fazy planowania próby, stosujemy \textsf{Avastin} ze względu na mniejszy koszt. Pozwoliłoby to zwiększyć próbę, a przy tym zaoferować leczenie większej liczbie pacjentów. 
+
+
+# 2) Grupa eksperymentalna
+
+- Pacjent powinien stawiać się na kontrole co miesiąc (chęć maskowania).
+- Lekarz powinien regularnie oceniać stan zdrowia pacjenta, gdyż pacjent może nie być obiektywny lub nie `zauważyć` pogorszenia.
+- Dzięki regularnemu stawianiu się pacjenta na kontrole, można zaobserwować efekty uboczne leczenia, których pacjent mógłby nie powiązać \text{z próbą kliniczną}.
+- Gdyby pacjent nie stawiał się na wizyty, ciężko byłoby stwierdzić czy zrezygnował z próby klinicznej czy jednak jego stan się faktycznie nie pogarsza.
+- W przypadku wyboru czasu do wystąpienia zdarzenia jako miary kryterium oceny skuteczności leczenia, konieczne są regularne wizyty.
+
+# 3) Maskowanie
+
+\begin{block}{Pacjent}
+\begin{itemize}
+\item Stosujemy maskowanie pacjentów
+   \begin{itemize}
+   \item wyeliminowanie subiektywnego podejścia pacjenta do leczenia \text{i oceny} swojego stanu zdrowia \text{w wywiadzie} środowiskowym \text{w trakcie} kontroli lekarskich
+   \item brak ryzyka rezygnacji pacjenta, w przypadku nie otrzymania przez niego pożądanej metody leczenia
+   \end{itemize}
+\end{itemize}
+\end{block}
+
+
+\begin{block}{Lekarz}
+\begin{itemize}
+   \item Występują problemy z symulowaniem nakłuwania (2 na 3 razy dla \textsf{SIREN}), które uniemożliwiają skuteczne zamaskowanie lekarzy podających lek.
+   \item Ciężko wyeliminować ryzyko komunikacji między lekarzem podającym lek a oceniającym.
+\end{itemize}
+\end{block}
+
+
+
+
+# 4) Warstwowanie
+
+\begin{block}{Zmienne uwzględniające podział na warstwy}
+\begin{itemize}
+   \item Wiek - ze względu na zwiększone ryzyko wystąpienia efektów ubocznych u pacjentów powyżej 65 roku życia, dzielimy pacjentów na 2 przedziały wiekowe.
+   \item Podgrupa zmiany patologicznej - ze względu na lepsze prognozy dla typów 'Minimally classic' oraz 'occult' CNV, dzielimy pacjentów na 2 grupy, w drugiej grupie umieszczając pozostałych pacjentów ('Classic' CNV). 
+   \item Rozmiar zmiany patologicznej - podobnie j.w. - zwiększona szansa na widoczne efekty leczenia w przypadku dużego rozmiaru uszkodzenia
+\end{itemize}
+\end{block}
+
+
+# 5) Technika przydziału leczenia
+
+\begin{block}{Minimizacja brzegowego rozkładu czynników prognostycznych}
+\begin{itemize}
+   \item losowo wygenerowana permutacja kolejności przydzielania pacjentów do grup
+   \item przydzielanie z uwzględnieniem minimalizacji wariancji niezrównoważeń
+   \item równa liczebność grup eksperymentalnej i kontrolnej
+   \item równomierne rozłożenie pacjentów ze względu na zmienne warstwujące 
+\end{itemize}
+\end{block}
