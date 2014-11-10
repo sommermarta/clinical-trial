@@ -1,6 +1,6 @@
 ---
 title: 'Warsztaty badawcze - projekt 4'
-author: Adam Biesiada, Marcin Kosiński, \newline Piotr Prostko, Marta Sommer
+author: Adam Biesiada, Marcin Kosiński, \newline \  Piotr Prostko, Marta Sommer
 date: "24 Października 2014"
 output:
   beamer_presentation:

@@ -1,6 +1,6 @@
 ---
 title: " Warsztaty badawcze - projekt 5"
-author: Adam Biesiada, Marcin Kosiński, \newline Piotr Prostko, Marta Sommer
+author: Adam Biesiada, Marcin Kosiński, \newline \ Piotr Prostko, Marta Sommer
  
  
 date: 25 Października, 2014
