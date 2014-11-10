@@ -24,7 +24,5 @@ output:
 ```{r,child='prez4files/pyt4.rmd'}
 
 ```
-```{r,child='prez4files/pyt5.rmd'}
 
-```
 
