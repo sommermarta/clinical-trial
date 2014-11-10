@@ -18,11 +18,9 @@ Zostawiamy wybór lekarzom.
 
 \textcolor{red}{DLACZEGO?}
 
--- Główną przyczyną wykluczenia starszych ludzi z próby miałoby być większe ryzyko zgonu w czasie jej trwania (z powodu podeszłego wieku, a nie wpływu działania leku, ewentualnie z powodu skutków ubocznych). Lekarz oceni więc, czy pacjent dożyje do końca próby, czy nie.
-
--- Wiek miał wpływ na efekty uboczne leku, a nie na efekt działania leku, nie powinniśmy więc brać go zbytnio pod uwagę w trzeciej fazie próby klinicznej.
-
--- Warstwowanie zapobiegnie przypisywaniu SIREN-owi odpowiedzialności za śmierć starszych pacjentów. 
+- Główną przyczyną wykluczenia starszych ludzi z próby miałoby być większe ryzyko zgonu w czasie jej trwania (z powodu podeszłego wieku, a nie wpływu działania leku, ewentualnie z powodu skutków ubocznych). Lekarz oceni więc, czy pacjent dożyje do końca próby, czy nie.
+- Wiek miał wpływ na efekty uboczne leku, a nie na efekt działania leku, nie powinniśmy więc brać go zbytnio pod uwagę w trzeciej fazie próby klinicznej.
+- Warstwowanie zapobiegnie przypisywaniu SIREN-owi odpowiedzialności za śmierć starszych pacjentów. 
 
 
 
