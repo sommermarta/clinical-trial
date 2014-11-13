@@ -7,3 +7,5 @@ Próba generalna gita:
 -- wow
 
 -- ale fajne
+
+-- git jest potęgą
