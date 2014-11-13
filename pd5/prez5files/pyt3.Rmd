@@ -1,3 +1,9 @@
-# pyt3
+# PYTANIE 3
 
 text 
+
+Próba generalna gita:
+
+-- wow
+
+-- ale fajne
