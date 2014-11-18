@@ -1,3 +1,24 @@
-# pyt2
+# pytanie 2
 
-tekxt
+- Ze względu na konieczność regularnego stawiania się pacjenta w szpitalu w celu podania zastrzyku, rozważaliśmy wykorzystanie powtarzanych pomiarów efektu leczenia w naszej analizie. Takie podejście pozwala także wydobyć najwięcej informacji z przeprowadzonej próby.
+
+- Problemem jest jednak różna częstotliwość podawania obu leków. Aby zebrać odpowiednie dane należało by nakazać pacjentom przyjmującym SIREN stawianie się co miesiąc na kontrole. Patrząc realistycznie na taki warunek, mieliśmy wątpliwości co do regularności pojawiania się pacjentów w szpitalu w miesiącach, w których i tak nie otrzymują leku. Efektem takiej nieregularności są bardzo uciążliwe w analizie braki danych, a wyniki analizy są trudne w interpretacji dla klinicystów.
+
+- Ponadto pamiętamy, że podstawowym celem fazy trzeciej jest ocena końcowego efektu leczenia, której w skuteczny sposób można dokonać badając pacjentów na zakończenie próby.
+
+
+#
+
+- W obliczu powyższego decydujemy się na ocenę stanu wzroku pacjentów na koniec próby.
+
+- Nie możemy wykorzystać średniej ostrości widzenia w grupach, ponieważ średnia ostrość widzenia na początku próby może się różnić między grupami.
+
+\textcolor{red}{OSTATECZNIE:}
+
+- Ostatecznie jako podstawowe kryterium oceny wyznaczamy czas do uzyskania poprawy trzech lini widzenia w ciągu dwóch lat trwania próby.
+
+- Do oceny planujemy wykorzystanie parametrycznego modelu AFT. W przypadku niespełnionych założeń dotyczących specyfikacji rozkładu, analizujemy nieparametryczny model PH. Jeżeli założenie proporcjonalności hazardów również nie będzie spełnione, przeprowadzamy test LOGRANK.
+
+- Miarą dla przyjętego kryterium, w zależności od użytego modelu, byłby iloraz hazardów lub średni czas przeżycia.  
+
+- do dopisania prosy i consy

@@ -1,3 +1,18 @@
-# pyt5
+# pytanie 5
 
-test 
+\textcolor{red}{OPINIA:} 
+
+W przypadku takiego schematu podawania leków, odradzamy wybór liczby zastrzyków jako głównego kryterium oceny skuteczności leczenia.
+
+
+\textcolor{red}{A TO DLACZEGO?}
+
+- W grupie kontrolnej LUCENTIS jest podawany co miesiąc, zatem liczba wykonanych zastrzyków będzie zawsze niemniejsza od liczby zastrzyków podanych w grupie eksperymentalnej. W związku z tym konieczne było by ustalenie progu, powyżej którego różnica średniej liczby zastrzyków w obu grupach mogłaby zostać uznana za istotną. Wybór takiego progu jest zawsze kłopotliwy i mocno wpływa na późniejszą ocenę efektów leczenia.
+
+
+#
+
+- Przy takim podejściu uzyskujemy niewiele informacji na temat jakości leczenia. Ignorujemy dane o pacjentach, u których podczas leczenia nastąpiła poprawa, a nie jedynie brak pogorszenia. Aby tego uniknąć należało by i tak wyznaczyć inne, dodatkowe kryteria oceny skuteczności leczenia.
+
+
+- Korzyścią jest natomiast możliwość wyznaczenia orientacyjnej redukcji liczby zastrzyków LUCENTISu po uprzednim jednorazowym podaniu SIRENu. Korzyść ta jest jednak niewspółmierna do problemów wskazanych powyżej.
