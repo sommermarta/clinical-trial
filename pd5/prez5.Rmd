@@ -3,7 +3,7 @@ title: " Warsztaty badawcze - projekt 5"
 author: Adam Biesiada, Marcin Kosiński, \newline \ Piotr Prostko, Marta Sommer
  
  
-date: 25 Października, 2014
+date: 28 Listopada 2014
 output:
   beamer_presentation:
     theme: "Boadilla"

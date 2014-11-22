@@ -1,11 +1,11 @@
 ---
 title: 'Warsztaty badawcze - projekt 4'
 author: Adam Biesiada, Marcin Kosiński, \newline \  Piotr Prostko, Marta Sommer
-date: "24 Października 2014"
+date: "26 Listopada 2014"
 output:
   beamer_presentation:
     theme: "Boadilla"
-    colortheme: "rose"
+    colortheme: "dove"
     fonttheme: "structuresmallcapsserif"
     highlight: haddock
     includes:

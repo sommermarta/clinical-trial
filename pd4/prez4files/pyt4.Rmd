@@ -1,3 +1,38 @@
 # pyt4
 
-test 
+```{r, echo=FALSE}
+# 
+# x <- data.frame( ITT= c( "SIREN 0.5", rep("AS RDM 0.5",2), 
+#                         "AS RDM 0.75", "LUC 0/1", "XXX", "AS RDM 0.4/0.6", "AS RDM 0.5" ),
+#                   PP = c(rep("NO", 6), "XXX", "NO"),
+#                   AS = c(rep("NO", 2), "AS RDM 0.5", "AS RDM 0.75", 
+#                         "LUC 0.1/1", "XXX", "AS RDM 0.4/0.6", "AS RDM 0.5") )
+# library(xtable)
+# print(xtable(x), file="tabela.tex", floating=FALSE)
+
+```
+
+
+\begin{table}[ht]
+\begin{tabular}{rlll}
+  \hline
+ & ITT & PP & AS \\ 
+  \hline
+1 & SIREN 0.5 & NO & NO \\ 
+  2 & AS RDM 0.5 & NO & NO \\ 
+  3 & AS RDM 0.5 & NO & AS RDM 0.5 \\ 
+  4 & AS RDM 0.75 & NO & AS RDM 0.75 \\ 
+  5 & LUC 0.1/1 & NO & LUC 0.1/1 \\ 
+  6 & XXX & XXX & XXX \\ 
+  7 & AS RDM 0.4/0.6 & NO & AS RDM 0.4/0.6 \\ 
+  8 & AS RDM 0.5 & NO & AS RDM 0.5 \\ 
+   \hline
+\end{tabular}
+
+\end{table}
+
+- Jeślie pacjent nie jest uwzględniony w badaniu to w tabeli widnieje napis \textsf{NO}.
+- Pierwszy napis oznacza, do której trafił grupy.
+- Liczby to wagi do testu proporcji.
+
+

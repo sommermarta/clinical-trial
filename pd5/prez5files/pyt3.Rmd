@@ -4,8 +4,4 @@ text
 
 Próba generalna gita:
 
--- wow
-
--- ale fajne
-
--- git jest potęgą
+- Strata więcej niż trzech linii 

@@ -1,3 +1,6 @@
-# pyt3
+# PYTANIE 3
 
-text 
+- Przede wszystkim na pewno powarstwujemy chorych po rodzaju AMD.
+- Zbadamy efekt główny (czy SIREN działa w porównaniu do LUCENTIS-u). Jeśli okaże się on istotny statystycznie, to będziemy analizować dalsze hipotezy.
+- Jako, że nie interesują nas efekty między grupami (np. czy lek działa lepiej dla chorych z \textit{occult} niż z \textit{minimally classic} AMD), tylko efekt w grupach (czy lek działa dla którejś z grup - być może dla każdej), będziemy używać testu istotności w warstwach.
+- By uniknąć problemu wielokrotnego testowania, zastosujemy metodę Hochberga.
