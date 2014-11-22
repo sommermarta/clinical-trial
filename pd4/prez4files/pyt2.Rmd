@@ -14,8 +14,10 @@ Włączylibyśmy do próby chorych ze wszystkimi trzema typami AMD.
 
 \textcolor{red}{DECYZJA:} 
 
-Ustalemy minimalną liczbę pacjentów w każdej warstwie (każda warstwa liczyłaby przynajmniej $\frac{1}{5}$ wymaganej liczności próbki). \textcolor{green}{może jednak tego nie pisać, tylko dopowiedzieć ewentualnie, jeśli spyta????}
+Ustalemy minimalną liczbę pacjentów w każdej warstwie (każda warstwa liczyłaby przynajmniej $\frac{1}{5}$ wymaganej liczności próbki).
 
 \textcolor{red}{DLACZEGO?}
 
 - Gdyby się zdarzyło, że do którejś z warstw nie trafiła żadna osoba (lub zbyt mała liczba osób), to nie moglibyśmy wtedy wnioskować o wpływie SIREN-u na tę grupę pacjentów.
+
+- Zdajemy sobie sprawę, że ustawienie minimalnego progu może znacznie wydłużyć czas trwania próby, ale podejmujemy to ryzyko ze względu na większą rzetelność wnioskowania.

@@ -1,0 +1,49 @@
+---
+title: " Warsztaty badawcze - projekt 6"
+author: Adam Biesiada, Marcin Kosiński, \newline \ Piotr Prostko, Marta Sommer
+ 
+ 
+date: 3 Grudnia 2014
+output:
+  beamer_presentation:
+    theme: "Boadilla"
+    colortheme: "dove"
+    fonttheme: "structuresmallcapsserif"
+    highlight: haddock
+    includes:
+      in_header: mystyle.tex
+---
+
+```{r,child='prez6files/pyt1.rmd'}
+
+```
+```{r,child='prez6files/pyt2.rmd'}
+
+```
+```{r,child='prez6files/pyt3.rmd'}
+
+```
+```{r,child='prez6files/pyt4.rmd'}
+
+```
+```{r,child='prez6files/pyt5.rmd'}
+
+```
+```{r,child='prez6files/pyt6.rmd'}
+
+```
+```{r,child='prez6files/pyt7.rmd'}
+
+```
+
+```{r,child='prez6files/pyt8.rmd'}
+
+```
+
+```{r,child='prez6files/pyt9.rmd'}
+
+```
+
+```{r,child='prez6files/pyt10.rmd'}
+
+```

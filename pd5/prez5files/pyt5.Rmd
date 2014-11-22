@@ -12,7 +12,7 @@ W przypadku takiego schematu podawania leków, odradzamy wybór liczby zastrzyk�
 
 #
 
-- Przy takim podejściu uzyskujemy niewiele informacji na temat jakości leczenia. Ignorujemy dane o pacjentach, u których podczas leczenia nastąpiła poprawa, a nie jedynie brak pogorszenia. Aby tego uniknąć należało by i tak wyznaczyć inne, dodatkowe kryteria oceny skuteczności leczenia.
+- Przy takim podejściu uzyskujemy niewiele informacji na temat jakości leczenia. Ignorujemy dane o pacjentach, u których podczas leczenia nastąpiła poprawa, a nie jedynie brak pogorszenia. Aby tego uniknąć należałoby i tak wyznaczyć inne, dodatkowe kryteria oceny skuteczności leczenia.
 
 
 - Korzyścią jest natomiast możliwość wyznaczenia orientacyjnej redukcji liczby zastrzyków LUCENTISu po uprzednim jednorazowym podaniu SIRENu. Korzyść ta jest jednak niewspółmierna do problemów wskazanych powyżej.

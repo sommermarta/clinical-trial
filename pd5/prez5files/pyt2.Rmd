@@ -1,4 +1,5 @@
 # pytanie 2
+\small
 
 - Ze względu na konieczność regularnego stawiania się pacjenta w szpitalu w celu podania zastrzyku, rozważaliśmy wykorzystanie powtarzanych pomiarów efektu leczenia w naszej analizie. Takie podejście pozwala także wydobyć najwięcej informacji z przeprowadzonej próby.
 
@@ -8,10 +9,11 @@
 
 
 #
+\small
 
 - W obliczu powyższego decydujemy się na ocenę stanu wzroku pacjentów na koniec próby.
 
-- Nie możemy wykorzystać średniej ostrości widzenia w grupach, ponieważ średnia ostrość widzenia na początku próby może się różnić między grupami.
+- Nie możemy wykorzystać średniej ostrości widzenia w grupach, ponieważ ostrość widzenia na początku próby może się różnić między grupami.
 
 \textcolor{red}{OSTATECZNIE:}
 
@@ -21,4 +23,3 @@
 
 - Miarą dla przyjętego kryterium, w zależności od użytego modelu, byłby iloraz hazardów lub średni czas przeżycia.  
 
-- do dopisania prosy i consy
