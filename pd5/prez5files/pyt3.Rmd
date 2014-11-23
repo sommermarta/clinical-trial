@@ -1,7 +1,12 @@
 # PYTANIE 3
 
-text 
+\textcolor{red}{Kryteria drugoplanowe oceny skuteczności leczenia:}
 
-Próba generalna gita:
+- Proporcja pacjentów ze wzrostem o  3 lub więcej linie widzenia.
+- Proporcja pacjentów ze spadkiem o 2 lub więcej linie widzenia w porównaniu - informacja czy nowa terapia nie zwiększa odsetka pacjentów ,,opornych" na leczenie.
 
-- Strata więcej niż trzech linii 
+Wybór powyższych kryteriów to ukłon w stronę klinicystów (kryteria binarne). Analiza oparta o test proporcji dla dwóch odsetków (tzw. test Walda) bądź modyfikację - test Wilsona z poprawką na ciągłość (lepsza aproksymacja).
+
+- Zmiana obszaru (w mm$^2$) ,,uszkodzeń'' widocznych podczas angiografii fluoresceinowej (krwotok podsiatkówkowy, odwarstwienie siatkówki, zwkłóknienie etc.).
+To kryterium ocenia efekt biologiczny leczenia. Analiza - jeśli spełnione założenia, to ANOVA, jeśli nie to użyjemy testu Wilcoxona.
+
