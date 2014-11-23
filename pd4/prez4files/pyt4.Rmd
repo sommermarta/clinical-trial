@@ -1,4 +1,4 @@
-# pyt4
+# Pytanie 4
 
 ```{r, echo=FALSE}
 # 
@@ -12,27 +12,18 @@
 
 ```
 
+\begin{block}{}
 
-\begin{table}[ht]
-\begin{tabular}{rlll}
-  \hline
- & ITT & PP & AS \\ 
-  \hline
-1 & SIREN 0.5 & NO & NO \\ 
-  2 & AS RDM 0.5 & NO & NO \\ 
-  3 & AS RDM 0.5 & NO & AS RDM 0.5 \\ 
-  4 & AS RDM 0.75 & NO & AS RDM 0.75 \\ 
-  5 & LUC 0.1/1 & NO & LUC 0.1/1 \\ 
-  6 & XXX & XXX & XXX \\ 
-  7 & AS RDM 0.4/0.6 & NO & AS RDM 0.4/0.6 \\ 
-  8 & AS RDM 0.5 & NO & AS RDM 0.5 \\ 
-   \hline
-\end{tabular}
+\begin{table}
+\centering
+\subfloat[Liczby to wagi do testu proporcji.]{\label{tab:taba1a}\scalebox{.9}{\input{./prez4files/tabela2}}}
 
 \end{table}
 
-- Jeślie pacjent nie jest uwzględniony w badaniu to w tabeli widnieje napis \textsf{NO}.
-- Pierwszy napis oznacza, do której trafił grupy.
-- Liczby to wagi do testu proporcji.
+\end{block}
 
+\small 
 
+- Intent-to-treat (ITT) - zgodnie z randomizacją
+- Per-protocol (PP) - zgodnie z protokołem
+- As-treated (AS) - zgodnie z leczeniem
