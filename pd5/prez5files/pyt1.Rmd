@@ -1,3 +1,74 @@
-# pyt 1 
+# Pytanie 1 1/5
 
-jakis tekst
+\begin{block}{Zmiana ostrości wzroku między poziomem wyjściowym a poziomem po 1 roku}
+\begin{itemize}
+   \item \textcolor{blue}{czułość statystyczna}: Niska moc ze względu na jeden pomiar, jednak większa niż dla zmiennych binarnych.
+   \item \textcolor{blue}{znaczenie biologiczne}:
+   \item \textcolor{blue}{itotność kliniczna}: Użyteczna klinicznie, dająca wiele informacji.
+   \item \textcolor{blue}{niezawodność pomiaru}: Niezawodne - widzi albo nie widzi.
+
+\end{itemize}
+\end{block}
+
+
+# Pytanie 1 2/5
+
+\begin{block}{Proporcja pacjentów z poprawą o 15 lub więcej linii}
+\begin{itemize}
+   \item \textcolor{blue}{czułość statystyczna}: Niska moc. Strata informacji, bo bazuje na zmiennych binarnych. Nie uchwyci pacjentów ze wzrostem o 50 linii tak samo skutecznie jak tych ze wzrostem o 15. Wrażliwość jest związana z częstością zdarzeń. Niekoniecznie  zachodzi liniowa zależność w poprawie wzroku dla każdego poziomu startowego
+   \item \textcolor{blue}{znaczenie biologiczne}: Biologicznie nie jest sprawdzana żadna cecha.
+   \item \textcolor{blue}{itotność kliniczna}: Jako zmienna binarna jest użyteczna klinicznie a dodatkowo łatwa w interpretacji.
+   \item \textcolor{blue}{niezawodność pomiaru}: Wiarogodna metoda oceny skuteczności leczenia.
+
+\end{itemize}
+\end{block}
+
+
+# Pytanie 1 3/5
+
+\begin{block}{Liczba wstrzyknięć, gdy są potrzebne}
+\begin{itemize}
+   \item \textcolor{blue}{czułość statystyczna}: Można traktować jako zmienną ciągła. Wrażliwa na poprawę ale nie potrafimy rozpoznawać pacjentów dla których poziom widzenia jest stały ale na widzą różną liczbę liter. Strata informacji pomimo regularnie zbieranych danych.
+   \item \textcolor{blue}{znaczenie biologiczne}: Biologicznie nie jest sprawdzana żadna cecha.
+   \item \textcolor{blue}{itotność kliniczna}: Kryterium kliniczne.
+   \item \textcolor{blue}{niezawodność pomiaru}: Zastrzyk podawany jedynie w faktycznie koniecznych przypadkach dlatego suma zastrzyków jest przez nas uważana za poprawne i rzetelne kryterium skuteczności leczenia.
+
+\end{itemize}
+\end{block}
+
+
+
+# Pytanie 1 4/5
+
+\begin{block}{Zmiany w płynie i grubości dołka środkowego oka podczas OCT}
+\begin{itemize}
+   \item \textcolor{blue}{czułość statystyczna}: W grupie as needed mamy dodatkowo dużo informacji ze względu na wielokrotne pomiary co daje dużą moc statystyczną. Ciągła zmienna zwiększa pozytywnie ilość gromadzonych informacji. Wrażliwość na poprawę i pogorszenie.
+   \item \textcolor{blue}{znaczenie biologiczne}: Biologicznie kryterium bo ma związek z poprawą struktury biologicznej oka.
+   \item \textcolor{blue}{itotność kliniczna}: Nie jest to kryterium kliniczne.
+   \item \textcolor{blue}{niezawodność pomiaru}: Uważamy, że pomimo zaślepionej decyzji okulisty kryterium to (i podobne sprawdzane w trakcie OCT) są rzetelne.
+
+\end{itemize}
+\end{block}
+
+
+# Pytanie 1 5/5
+
+\begin{block}{Zmienność w zmianach patologicznych}
+\begin{itemize}
+   \item \textcolor{blue}{czułość statystyczna}: W grupie as needed mamy dodatkowo dużo informacji ze względu na wielokrotne pomiary co daje dużą moc statystyczną. Ciągła zmienna zwiększa pozytywnie ilość gromadzonych informacji. Wrażliwość na poprawę i pogorszenie.
+   \item \textcolor{blue}{znaczenie biologiczne}: Biologicznie kryterium bo ma związek z poprawą struktury biologicznej oka.
+   \item \textcolor{blue}{itotność kliniczna}: Nie jest to kryterium kliniczne.
+   \item \textcolor{blue}{niezawodność pomiaru}: Uważamy, że pomimo zaślepionej decyzji okulisty kryterium to (i podobne sprawdzane w trakcie OCT) są rzetelne.
+
+\end{itemize}
+\end{block}
+
+\textcolor{red}{To samo co poprzednio.}
+
+
+
+
+# Pytanie 1 6/5
+
+Dzięki co miesięcznym zastrzykom zachodzi idealne okazja do zbierania danych w równych odstępach czasu, co dodatkowo można wykorzystać do stwierdzenia kiedy nastapiła poprawa (w którym momencie). Podejście z powtarzalnymi pomiarami byłoby najskuteczniejsze.
+
