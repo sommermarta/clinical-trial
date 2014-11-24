@@ -2,9 +2,13 @@
 
 \textcolor{red}{LISTA WAŻNYCH EFEKTÓW UBOCZNYCH:} 
 
-- zapalenia górnych dróg jamy nosowej
+- zapalenia jamy nosowo-gardłowej
 
 - bóle głowy
+
+- bóle oka
+
+- zaburzenia widzenia
 
 - krowotki wewnątrz oka
 
@@ -12,6 +16,6 @@
 
 - zwiększone ciśnienie śródgałkowe 
 
-- zapalenie bądź odłączanie ciała szklistego
+- zapalenie ciała szklistego
 
 

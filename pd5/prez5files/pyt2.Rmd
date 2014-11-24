@@ -1,9 +1,9 @@
 # pytanie 2
 \small
 
-- Ze względu na konieczność regularnego stawiania się pacjenta w szpitalu w celu podania zastrzyku, rozważaliśmy wykorzystanie powtarzanych pomiarów efektu leczenia w naszej analizie. Takie podejście pozwala także wydobyć najwięcej informacji z przeprowadzonej próby.
+- Ze względu na konieczność regularnego stawiania się pacjenta w szpitalu w celu podania zastrzyku, rozważaliśmy wykorzystanie powtarzanych pomiarów efektu leczenia. Takie podejście pozwala także wydobyć najwięcej informacji z przeprowadzonej próby. Do analizy pomiarów można by wykorzystać wówczas zmodyfikowaną analizyzę wariancji rANOVA.
 
-- Problemem jest jednak różna częstotliwość podawania obu leków. Aby zebrać odpowiednie dane należało by nakazać pacjentom przyjmującym SIREN stawianie się co miesiąc na kontrole. Patrząc realistycznie na taki warunek, mieliśmy wątpliwości co do regularności pojawiania się pacjentów w szpitalu w miesiącach, w których i tak nie otrzymują leku. Efektem takiej nieregularności są bardzo uciążliwe w analizie braki danych, a wyniki analizy są trudne w interpretacji dla klinicystów.
+- Problemem jest jednak różna częstotliwość podawania obu leków. Aby zebrać odpowiednie dane należało by nakazać pacjentom przyjmującym SIREN stawianie się co miesiąc na kontrole. Patrząc realistycznie na taki warunek, mieliśmy wątpliwości co do regularności pojawiania się pacjentów w szpitalu w miesiącach, w których i tak nie otrzymują leku. Efektem takiej nieregularności są bardzo uciążliwe w analizie braki danych, a wyniki analizy są trudne w interpretacji dla klinicystów. Dodatkowo, w przypadku rANOVA'y, konieczne jest założenie normalności rozkładów, które nie musi być spełnione.
 
 - Ponadto pamiętamy, że podstawowym celem fazy trzeciej jest ocena końcowego efektu leczenia, której w skuteczny sposób można dokonać badając pacjentów na zakończenie próby.
 
@@ -21,5 +21,7 @@
 
 - Do oceny planujemy wykorzystanie parametrycznego modelu AFT. W przypadku niespełnionych założeń dotyczących specyfikacji rozkładu, analizujemy nieparametryczny model PH. Jeżeli założenie proporcjonalności hazardów również nie będzie spełnione, przeprowadzamy test LOGRANK.
 
-- Miarą dla przyjętego kryterium, w zależności od użytego modelu, byłby iloraz hazardów lub średni czas przeżycia.  
+- Miarą dla przyjętego kryterium, w zależności od użytego modelu, byłby iloraz hazardów lub średni czas przeżycia. 
+
+- Przy takim podejściu braki danych, wynikające z nieregularnego stawiania się pacjentów na badania są mniej problematyczne.
 
