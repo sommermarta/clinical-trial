@@ -1,7 +1,7 @@
 # pytanie 2
 \small
 
-- Ze względu na konieczność regularnego stawiania się pacjenta w szpitalu w celu podania zastrzyku, rozważaliśmy wykorzystanie powtarzanych pomiarów efektu leczenia. Takie podejście pozwala także wydobyć najwięcej informacji z przeprowadzonej próby. Do analizy pomiarów można by wykorzystać wówczas zmodyfikowaną analizyzę wariancji rANOVA.
+- Ze względu na konieczność regularnego stawiania się pacjenta w szpitalu w celu podania zastrzyku, rozważaliśmy wykorzystanie powtarzanych pomiarów efektu leczenia. Takie podejście pozwala także wydobyć najwięcej informacji z przeprowadzonej próby. Do analizy pomiarów można by wykorzystać wówczas zmodyfikowaną analizę wariancji rANOVA.
 
 - Problemem jest jednak różna częstotliwość podawania obu leków. Aby zebrać odpowiednie dane należało by nakazać pacjentom przyjmującym SIREN stawianie się co miesiąc na kontrole. Patrząc realistycznie na taki warunek, mieliśmy wątpliwości co do regularności pojawiania się pacjentów w szpitalu w miesiącach, w których i tak nie otrzymują leku. Efektem takiej nieregularności są bardzo uciążliwe w analizie braki danych, a wyniki analizy są trudne w interpretacji dla klinicystów. Dodatkowo, w przypadku rANOVA'y, konieczne jest założenie normalności rozkładów, które nie musi być spełnione.
 
