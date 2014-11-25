@@ -16,13 +16,11 @@
 
 \begin{table}
 \centering
-\subfloat[Liczby to wagi do testu proporcji.]{\label{tab:taba1a}\scalebox{.9}{\input{./prez4files/tabela2}}}
-
+\scalebox{.9}{\input{./prez4files/tabela2}}
+\caption{Liczby to wagi w teście proporcji.}
 \end{table}
-
 \end{block}
-
-\small 
+\tiny
 
 - Intent-to-treat (ITT) - zgodnie z randomizacją
 - Per-protocol (PP) - zgodnie z protokołem
