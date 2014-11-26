@@ -3,7 +3,7 @@
 \textcolor{red}{Kryteria drugoplanowe oceny skuteczności leczenia:}
 
 - Proporcja pacjentów ze wzrostem o  3 lub więcej linie widzenia.
-- Proporcja pacjentów ze spadkiem o 2 lub więcej linie widzenia - informacja czy nowa terapia nie zwiększa odsetka pacjentów "opornych" na leczenie.
+- Proporcja pacjentów ze spadkiem o 2 lub więcej linie widzenia - informacja czy nowa terapia nie zwiększa odsetka pacjentów ,,odpornych'' na leczenie.
 
 Wybór powyższych kryteriów to ukłon w stronę klinicystów (kryteria binarne). Analiza oparta o test proporcji dla dwóch odsetków (tzw. test Walda) bądź modyfikację - test Wilsona z poprawką na ciągłość (lepsza aproksymacja).
 
