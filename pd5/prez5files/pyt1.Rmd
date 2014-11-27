@@ -63,10 +63,6 @@
 \end{itemize}
 \end{block}
 
-\textcolor{red}{To samo co poprzednio.}
-
-
-
 
 # Pytanie 1 6/5
 
