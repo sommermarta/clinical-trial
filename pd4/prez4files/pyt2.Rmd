@@ -6,7 +6,7 @@ Włączylibyśmy do próby chorych ze wszystkimi trzema typami AMD.
 
 \textcolor{red}{DLACZEGO?}
 
-- Dopiero faza trzecia ma na celu pokazanie, czy lek ma wpływ na efekt leczenia, czy nie. Faza druga daje tylko domysły. Warto więc formalnie sprawdzić wpływ SIREN-u na chorych ze wszystkimi przema typami AMD.
+- Dopiero faza trzecia ma na celu pokazanie, czy lek ma wpływ na efekt leczenia, czy nie. Faza druga daje tylko domysły. Warto więc formalnie sprawdzić wpływ SIREN-u na chorych ze wszystkimi trzema typami AMD.
 
 - Możemy powarstwować ze względu na typ choroby. Byłyby tu tylko trzy warstwy, czyli dostalibyśmy dużo dodatkowych informacji małym kosztem.
 
