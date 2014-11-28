@@ -4,7 +4,7 @@ library(Hmisc)
 
 ### ZAD1
 
-nBinomial(p1=0.45,p2=0.3,alpha=0.05,n=200,outtype=2,sided=2))
+nBinomial(p1=0.45,p2=0.3,alpha=0.05,n=200,outtype=2,sided=2)
 bpower(0.45,0.3,n=200,n1=100,n2=100,alpha=0.05) # pakiet Hmisc, daje podobna moc
 
 # pwr.chisq.test(w =, N = , df = , sig.level =, power = ) 
@@ -23,7 +23,7 @@ plot(1-betki~nki,type='l')
 var <- function(x){6.5^2*sqrt(x)} 
 var(52) # wariancja w 52 tyg
 
-dif <- 15-qnorm(0.55)*sqrt(var_52) -(15-qnorm(0.7)*sqrt(var_52))
+dif <- 15-qnorm(0.55)*sqrt(var(52)) -(15-qnorm(0.7)*sqrt(var(52)))
 
 nNormal(delta1=dif,delta0=0,n=200,alpha=0.05,side=2,sd=sqrt(var(52)),ratio=1,outtype=2) 
 # rownowazne hipotezy, a test dla srednich ma duza wieksza moc niz chi^2
@@ -36,6 +36,7 @@ beta <- pnorm(qnorm(1-0.05/2),dif/sigma)-pnorm(qnorm(0.05/2),dif/sigma)
 ### ZAD 3
 
 var(26)
+dif <- 15-qnorm(0.55)*sqrt(var(52)) -(15-qnorm(0.7)*sqrt(var(52)))
 nNormal(delta1=dif/2,delta0=0,n=200,alpha=0.05,side=2,sd=sqrt(var(26)),ratio=1,outtype=2) # dziwnee
 
 
@@ -46,12 +47,20 @@ nNormal(delta1=dif,delta0=0,n=200,alpha=0.05,side=2,sd=sqrt(var(26)),ratio=1,out
 
 ### ZAD 5
 
+
+# rANOVA
+
+
 ### ZAD 6
 
 var(52) # wariancja w 52 tyg
-dif <- 15-qnorm(0.55)*sqrt(var_52) -(15-qnorm(0.7)*sqrt(var_52))
+(dif <- 15-qnorm(0.55)*sqrt(var(52)) -(15-qnorm(0.7)*sqrt(var(52))))
 
-nNormal(delta0=-dif,delta1=0,sd=sqrt(var(52)),alpha=0.05,beta=0.2,outtype=2)
+#nNormal(delta0=-dif,delta1=0,sd=sqrt(var(52)),alpha=0.05,beta=0.2,outtype=2)
+
+nNormal(delta1=0,delta0=-dif,sd=sqrt(var(52)),alpha=0.05,beta=0.2,outtype=2)
+
+
 2*(qnorm(0.8)+qnorm(0.95))^2/(dif/sqrt(var(52)))^2 # reczne sprawdzenie, OK
 
 ### ZAD 7
