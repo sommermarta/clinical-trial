@@ -1,17 +1,21 @@
-\small 
+# Pytanie 1 
 
-```{r, eval=FALSE}
-library(pwr)
-w = 0.273861279
+```{r, cache=TRUE}
 
-pwr.chisq.test(w =w, N = 200, df = 1, sig.level = 0.05)
+nBinomial( p1 = 0.45, p2 = 0.3, alpha = 0.05, n = 200, 
+           outtype = 2, sided = 2)
+bpower( 0.45, 0.3, n = 200, n1 = 100, n2 = 100, alpha = 0.05)
+# pakiet Hmisc daje podobną moc
 
+```
+
+# Pytanie 1
+
+```{r, echo=FALSE}
 y <- sapply( 1:500,function(x){
     nBinomial(p1=0.45,p2=0.3,alpha=0.05,n=x,outtype=2,sided=2)$Power} )
 
 
-
-library(ggplot2)
 x <- data.frame( power = y, sample = 1:500)
     p <- ggplot( x , aes(x = power, y = sample)) +geom_smooth() + 
       theme_bw(base_family="serif", base_size=20)+
@@ -22,15 +26,3 @@ x <- data.frame( power = y, sample = 1:500)
 
 ```
 
-# pyt1 2/2
-
-```{r, eval=FALSE}
-
-
-install.packages("gsDesign")
-library(gsDesign)
-?nBinomial
-
-simBinomial(p1=0.3, p2=0.45, n1=100, n2=100, delta0=0, nsim=10000, chisq=0, adj=0, scale="Difference")
-
-```

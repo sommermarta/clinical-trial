@@ -1,1 +1,21 @@
-# pyt6
+# Pytanie 6
+
+```{r, cache=TRUE}
+var(52) # wariancja w 52 tyg
+(dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) -
+    (15 - qnorm( 0.7 )*sqrt( var(52)) ))
+
+nNormal( delta1 = 0, delta0 = -dif, sd = sqrt( var(52) ),
+         alpha = 0.05, beta = 0.2, outtype = 2)
+
+```
+
+# Pytanie 6
+
+```{r, cache=TRUE}
+2*( qnorm( 0.8 ) + qnorm( 0.95) )^2/( 
+   dif/sqrt( var(52) ))^2 
+# reczne sprawdzenie, OK
+
+```
+

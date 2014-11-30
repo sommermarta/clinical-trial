@@ -8,8 +8,6 @@
 .Rdata
 
 
-.pdf
-*.pdf
 
 # RStudio files
 .Rproj.user/

@@ -1,1 +1,10 @@
-# pyt7
+# Ptanie 7
+
+```{r, cache=TRUE}
+nNormal( delta0 = -5, delta1 = 0, sd = sqrt( var(52) ),
+         alpha = 0.05, beta = 0.2, outtype = 2)
+2*( qnorm( 0.8 ) + qnorm( 0.95 ))^2/( 5/sqrt( var(52) ))^2
+# reczne sprawdzenie, OK
+
+```
+

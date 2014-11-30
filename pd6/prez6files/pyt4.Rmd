@@ -1,1 +1,9 @@
-# pyt4
+# Pytanie 4
+```{r, cache=TRUE}
+(dif <- 15 - qnorm( 0.55 )*sqrt( var(26) ) - 6.6)
+
+nNormal( delta1 = dif, delta0 = 0, n = 200,
+         alpha = 0.05, side = 2, sd = sqrt( var(26) ),
+         ratio = 1, outtype = 2) 
+```
+
