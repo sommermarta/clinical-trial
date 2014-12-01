@@ -1,7 +1,45 @@
 # Pytanie 1a 
 
-```{r, cache=TRUE}
+\small
+
+\begin{block}{\textcolor{blue}{Analizę planujemy dla hipotezy:}}
+
+\[ \left\{ 
+  \begin{array}{l }
+    \mathbb{H}_{0}: \mu_{S}-\mu_{L}=0\\
+    \mathbb{H}_{A}: \mu_{S}-\mu_{L} \ge 5
+  \end{array} \right.\]
+
+\end{block}
 
 
+```{r, echo=TRUE}
+
+(n <- nNormal(delta1=5,sd=17,alpha=0.05,beta=0.1,sided=1))
+gsD.1a <- gsDesign(k=3,test.type=1,alpha=0.05,
+                   n.fix=ceiling(n),beta=0.1,sfu='OF')
 
 ```
+
+
+# Pytanie 1a 
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & n & Z & Nominal p \\ 
+  \hline
+1 & 135.286 & 2.961 & 0.002 \\ 
+  2 & 270.572 & 2.094 & 0.018 \\ 
+  3 & 405.857 & 1.710 & 0.044 \\ 
+   \hline
+\end{tabular}
+\caption{Plan analizy.}
+\end{table}
+
+
+
+
+
+

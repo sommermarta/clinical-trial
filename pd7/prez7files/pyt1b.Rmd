@@ -1,7 +1,28 @@
 # Pytanie 1b 
 
-```{r, cache=TRUE}
+```{r, echo=TRUE}
 
+gsD.1b <- gsDesign(k=3,test.type=1,alpha=0.05,
+              n.fix=ceiling(n),beta=0.1,sfu='Pocock')
 
 
 ```
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrr}
+  \hline
+ & n & Z & Nominal p \\ 
+  \hline
+1 & 153.848 & 1.992 & 0.023 \\ 
+  2 & 307.696 & 1.992 & 0.023 \\ 
+  3 & 461.544 & 1.992 & 0.023 \\ 
+   \hline
+\end{tabular}
+\caption{Plan analizy.}
+\end{table}
+
+\small
+
+Rekomendujemy strategię O'Brien-Fleminga jako bardziej konserwatywną w początkowych analizach przejściowych. Ze względu na dość dużą wariancję różnicy ostrości wzroku u pacjentów, chcemy zachować większy poziom istotności dla testu na końcu próby. 
+Dodatkowo SIREN jest podawany co 3 miesiące, więc szansa wykrycia efektu w trakcie trwania próby jest niewielka chyba, że będzie on naprawdę wyraźny.
