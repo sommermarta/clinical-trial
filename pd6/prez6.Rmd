@@ -9,7 +9,7 @@ output:
     theme: "Boadilla"
     colortheme: "dove"
     fonttheme: "structuresmallcapsserif"
-    highlight: espresso
+    highlight: pygments
     includes:
       in_header: mystyle.tex
 ---
