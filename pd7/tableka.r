@@ -6,4 +6,4 @@ y <- as.data.frame(y)
 names(y) <- c("n", "Z", "Nominal p", "spend")
 
 library(xtable)
-xtable(y)
+xtable(y, digits=3)
