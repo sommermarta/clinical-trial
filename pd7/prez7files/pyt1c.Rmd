@@ -67,7 +67,7 @@ $$\Delta(\theta) = \frac{\text{gsDesign}(...,\theta)\text{\$upper\$bound[2]} \cd
 
 # Pytanie 1c 
 
-\small
+\tiny
 
 ```{r, echo=FALSE}
 library(gsDesign)
@@ -83,7 +83,7 @@ delta <- sapply(theta, function(theta){
 ```
 
 
-````{r, echo=FALSE, fig.width=6, fig.height=2}
+````{r, echo=FALSE, fig.width=6, fig.height=3.2}
 
 wykres <- data.frame(theta = theta, delta = delta)
 library(ggplot2)
