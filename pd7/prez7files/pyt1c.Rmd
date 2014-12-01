@@ -1,6 +1,127 @@
 # Pytanie 1c 
 
+\small
+
+\begin{block}{\textcolor{blue}{Założenia i hipotezy}}
+\begin{align*}
+X_{S} = VA_{c_{S}} & \sim \mathcal{N}(\mu_{S}, \sigma = 17) \\
+X_{L} = VA_{c_{L}} & \sim \mathcal{N}(\mu_{L}, \sigma = 17) 
+\end{align*}
+
+
+
+\[ \left\{ 
+  \begin{array}{l }
+    \mathbb{H}_{0}: \mu_{S}-\mu_{L}=0\\
+    \mathbb{H}_{A}: \mu_{S}-\mu_{L}=5
+  \end{array} \right.\]
+
+
+
+\end{block}
+
+\begin{block}{\textcolor{blue}{Rozkłady}}
+
+$$\hat{\mu_{S}} = \bar{X_{S}} = \frac{X_{1}+\dots+X_{mk}}{mk} \sim \mathcal{N}(\frac{\mu_{S}mk}{mk}, \frac{\sigma\sqrt{mk}}{mk})=
+\mathcal{N}(\mu_{S}, \frac{\sigma}{\sqrt{mk}})$$
+
+$$\hat{\mu_{S}}-\hat{\mu_{L}} \sim \mathcal{N}(\mu_{S}, \frac{\sigma}{\sqrt{mk}}) - \mathcal{N}(\mu_{L}, \frac{\sigma}{\sqrt{mk}}) \stackrel{\mathbb{H}_{0}}{=} \mathcal{N}(0, \frac{\sigma\sqrt{2}}{\sqrt{mk}})$$
+
+\end{block}
+
+# Pytanie 1c 
+
+\small
+
+\begin{block}{\textcolor{blue}{Standaryzowana statystyka}}
+\begin{align*}
+Z_{k}= & \frac{\hat{\mu_{S}}-\hat{\mu_{L}}}{\frac{\sigma\sqrt{2}}{\sqrt{mk}}}=
+\frac{\hat{\mu_{S}}-\hat{\mu_{L}}}{\sigma\sqrt{2}}\cdot\sqrt{mk}=
+\frac{\frac{\sum_{i=1}^{km}X_{Si}}{km}-\frac{\sum_{i=1}^{km}X_{Li}}{km}}{\sigma\sqrt{2}}\cdot\sqrt{mk}= \\ 
+Z_{k}= & \frac{\sum_{i=1}^{km}X_{Si}-\sum_{i=1}^{km}X_{Li}}{\sigma\sqrt{2mk}}
+\end{align*}
+\end{block}
+
+\begin{block}{\textcolor{red}{Korzystając z równości (slajd 14, wyk 8)}}
+
+$$Z_{k}= \frac{\sum_{i=1}^{km}X_{Si}-\sum_{i=1}^{km}X_{Li}}{\sigma\sqrt{2mk}} \stackrel{?}{=}\frac{\bar{X}_{Sk} - \bar{X}_{Lk}}{\sigma \sqrt{2k/m}},$$
+dochodzimy do wniosku, że tak wygląda statystyka testowa
+$$Z_{k}= \frac{\sum_{i=1}^{km}X_{Si}-\sum_{i=1}^{km}X_{Li}}{\sigma\sqrt{2mk}}=
+\frac{\sum_{i=1}^{mk}\frac{X_{Si}}{m}-\sum_{i=1}^{mk}\frac{X_{Li}}{m}}{\sigma\sqrt{2k}}\cdot\sqrt{m}=
+\frac{\bar{X}_{Sk} - \bar{X}_{Lk}}{\sigma \sqrt{2k/m}}$$
+\end{block}
+
+# Pytanie 1c 
+
+\small
+
+Wybierając środkową postać statystyki przyjmujemy, że
+$$\Delta = \sum_{i=1}^{mk}\frac{X_{Si}}{m}-\sum_{i=1}^{mk}\frac{X_{Li}}{m},$$
+a wtedy 
+$$ Z_{2} = \frac{\Delta}{\sigma\sqrt{2\cdot2}}\cdot\sqrt{m} \Rightarrow \Delta = \frac{2Z_{2}\cdot\sigma}{\sqrt{m}} = \frac{2Z_{2}\cdot\sigma}{\sqrt{\frac{n}{2}}},$$
+czyli ostatecznie
+$$\Delta(\theta) = \frac{2Z_{2}(\theta)\cdot17\cdot\sqrt{2}}{\sqrt{n(\theta)}},$$
+zaś w języku funkcji z pakietu \textsf{gsDesign}
+$$\Delta(\theta) = \frac{\text{gsDesign}(...,\theta)\text{\$upper\$bound[2]} \cdot34\cdot\sqrt{2}}{\sqrt{\text{gsDesign}(...,\theta)\text{\$n.I[2]}}}$$
+
+
+# Pytanie 1c 
+
+\small
+
+```{r, echo=FALSE}
+library(gsDesign)
+```
+
 ```{r, cache=TRUE}
+n <- nNormal(delta1=5,sd=17,alpha=0.05,beta=0.1,sided=2)
+theta <- seq(0,2,by=0.1)
+delta <- sapply(theta, function(theta){
+  x <- gsDesign(k=3,test.type=1,alpha=0.05,
+                n.fix=ceiling(n),beta=0.1,sfu='WT',sfupar=theta)
+  x$upper$bound[2]*sqrt(2)*34/sqrt(x$n.I[2])})
+```
+
+````{r, echo=FALSE, fig.width=6, fig.height=2}
+wykres <- data.frame(theta = theta, delta = delta)
+library(ggplot2)
+library(ggthemes)
+ggplot(wykres, aes(x = theta, y = delta)) + geom_smooth(lwd=2)+
+   geom_hline(yintercept=5, col = "orange", lwd=2)+
+   geom_vline(xintercept=0.4, col = "red", lwd=2)+
+   theme_bw(base_family="serif", base_size=20)
 
 
 ```
+
+
+# Pytanie 1c
+
+
+```{r, eval=FALSE, echo=FALSE}
+n <- nNormal(delta1=5,sd=17,alpha=0.05,beta=0.1,sided=2)
+x <- gsDesign(k=3,test.type=2,alpha=0.05,
+              n.fix=ceiling(n),beta=0.1,sfu='WT',sfupar=0.4)
+y <- cbind(x$n.I,x$upper$bound, 1-pnorm(x$upper$bound), x$upper$spend )
+
+y <- as.data.frame(y)
+names(y) <- c("n", "Z", "Nominal p", "spend")
+
+library(xtable)
+xtable(y, digits=3)
+```
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & n & Z & Nominal p & spend \\ 
+  \hline
+1 & 180.849 & 2.120 & 0.017 & 0.017 \\ 
+  2 & 361.698 & 1.978 & 0.024 & 0.018 \\ 
+  3 & 542.547 & 1.899 & 0.029 & 0.015 \\ 
+   \hline
+\end{tabular}
+\caption{Plan analizy.}
+\end{table}
