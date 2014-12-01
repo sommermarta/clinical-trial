@@ -1,0 +1,7 @@
+# Pytanie 1a 
+
+```{r, cache=TRUE}
+
+
+
+```
