@@ -2,10 +2,10 @@
 
 ```{r, cache=TRUE}
 var(26)
-dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) - 
-   (15 - qnorm( 0.7 )*sqrt( var(52) ))
-nNormal( delta1 = dif/2, delta0 = 0, n = 200, 
-         alpha = 0.05, side = 2, sd = sqrt( var(26) ),
+(dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) - 
+   (15 - qnorm( 0.7 )*sqrt( var(52) )))
+nNormal( delta0 = 0,  delta1 = dif/2, n = 200, 
+         alpha = 0.05, sided = 2, sd = sqrt( var(26) ),
          ratio = 1, outtype = 2) 
 ```
 

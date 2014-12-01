@@ -1,11 +1,10 @@
 # Pytanie 6
 
 ```{r, cache=TRUE}
-var(52) # wariancja w 52 tyg
 (dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) -
     (15 - qnorm( 0.7 )*sqrt( var(52)) ))
 
-nNormal( delta1 = 0, delta0 = -dif, sd = sqrt( var(52) ),
+nNormal( delta0 = -dif, delta1 = 0, sd = sqrt( var(52) ),
          alpha = 0.05, beta = 0.2, outtype = 2)
 
 ```

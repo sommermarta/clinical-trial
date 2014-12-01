@@ -3,6 +3,7 @@ Formula
 ggplot2
 gsDesign
 Hmisc
+knitr
 lattice
 plyr
 pwr
@@ -10,4 +11,3 @@ RUnit
 stringr
 survival
 xtable
-knitr

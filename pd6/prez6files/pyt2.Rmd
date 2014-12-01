@@ -4,8 +4,8 @@
 var <- function(x){ 6.5^2*sqrt(x) } 
 var(52) # wariancja w 52 tyg
 
-dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) - 
-   (15 - qnorm( 0.7 )*sqrt( var(52) ))
+(dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) - 
+   (15 - qnorm( 0.7 )*sqrt( var(52) )))
 
 nNormal( delta1 = dif, delta0 = 0, n = 200, alpha = 0.05,
          side = 2, sd = sqrt( var(52) ), ratio = 1,
@@ -14,13 +14,11 @@ nNormal( delta1 = dif, delta0 = 0, n = 200, alpha = 0.05,
 
 # Pytanie 2
 ```{r, cache=TRUE}
-# rownoważne hipotezy, a test dla średnich ma dużo 
-# wiekszą moc niż chi^2
 
+# ręczne sprawdzenie
 sigma <- sqrt( var(52)*(1/100+1/100) ) # sigma efektu
-
 beta <- pnorm( qnorm(1-0.05/2), dif/sigma ) - 
    pnorm( qnorm(0.05/2), dif/sigma ) 
-(1-beta) # zgadza sie z nNormal (wow!)
+(1-beta) 
 ```
 

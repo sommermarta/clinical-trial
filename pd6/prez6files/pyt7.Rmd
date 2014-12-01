@@ -1,4 +1,4 @@
-# Ptanie 7
+# Pytanie 7
 
 ```{r, cache=TRUE}
 nNormal( delta0 = -5, delta1 = 0, sd = sqrt( var(52) ),

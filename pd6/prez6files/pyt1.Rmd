@@ -4,8 +4,8 @@
 
 nBinomial( p1 = 0.45, p2 = 0.3, alpha = 0.05, n = 200, 
            outtype = 2, sided = 2)
-bpower( 0.45, 0.3, n = 200, n1 = 100, n2 = 100, alpha = 0.05)
-# pakiet Hmisc daje podobną moc
+bpower( p1 = 0.45, p2 = 0.3, n = 200, n1 = 100, n2 = 100, alpha = 0.05)
+
 
 ```
 
