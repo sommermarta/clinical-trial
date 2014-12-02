@@ -1,8 +1,10 @@
 # Pytanie 9
 
 ```{r, cache=TRUE}
+# wielkośc próbki
 nNormal( delta0 = -5, delta1 = -2, sd = sqrt( var(52) ),
          alpha = 0.05, beta = 0.2, outtype = 2)
+# reczne sprawdzenie, OK
 (n <- 2*( qnorm( 0.8 ) + qnorm( 0.95 ))^2/(
    (-2+5)/sqrt( var(52) ))^2)
 

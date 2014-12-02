@@ -1,3 +1,15 @@
 # Pytanie 5
 
-## rANOVA
+Wielokrotne pomiary. Można spróbować zastosować repeated measures ANOVA (rANOVA), ale skoro wariancja jest niestała w czasie, to może warto wyprobówać nieparametryczną ANOVĘ czyli test Kruskala-Wallisa. Najlepiej gdyby istniał repeated measures Kruskal-Wallis test.
+
+Potencjalne zalety:
+
+- Uwzględnienie wszystkich pomiarów 
+- Większa moc (większa liczba pomiarów)
+
+Potencjalne wady:
+
+- Spore ryzyko występowania braków w danych
+
+
+

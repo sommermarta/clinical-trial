@@ -1,20 +1,15 @@
 # Pytanie 6
 
+\small 
+
 ```{r, cache=TRUE}
+# różnica w śr. efektach leczenia
 (dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) -
     (15 - qnorm( 0.7 )*sqrt( var(52)) ))
-
+# wielkośc próbki
 nNormal( delta0 = -dif, delta1 = 0, sd = sqrt( var(52) ),
          alpha = 0.05, beta = 0.2, outtype = 2)
-
-```
-
-# Pytanie 6
-
-```{r, cache=TRUE}
+# reczne sprawdzenie, OK
 2*( qnorm( 0.8 ) + qnorm( 0.95) )^2/( 
    dif/sqrt( var(52) ))^2 
-# reczne sprawdzenie, OK
-
 ```
-

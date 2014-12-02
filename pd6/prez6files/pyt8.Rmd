@@ -1,12 +1,13 @@
 # Pytanie 8
 
 ```{r, cache=TRUE}
+# wielkośc próbki
 nNormal( delta0 = -dif, delta1 = 0, sd = sqrt( var(52) ),
          alpha = 0.05, beta = 0.2, outtype = 2,
          ratio = 1/2 )
+# reczne sprawdzenie, OK
 n <- 3*( qnorm( 0.8 ) + qnorm( 0.95 ))^2/(
    dif/sqrt( var(52) ))^2 
-# reczne sprawdzenie, OK
 c(n,0.5*n)
 ```
 

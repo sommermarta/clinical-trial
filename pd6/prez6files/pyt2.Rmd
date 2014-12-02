@@ -1,15 +1,17 @@
 # Pytanie 2
 
 ```{r, cache=TRUE}
+# wariancja w 52 tyg
 var <- function(x){ 6.5^2*sqrt(x) } 
-var(52) # wariancja w 52 tyg
+var(52) 
 
+# różnica w śr. efektach leczenia
 (dif <- 15 - qnorm( 0.55 )*sqrt( var(52) ) - 
-   (15 - qnorm( 0.7 )*sqrt( var(52) )))
-
+   (15 - qnorm( 0.7 )*sqrt( var(52) ))) 
+# moc
 nNormal( delta1 = dif, delta0 = 0, n = 200, alpha = 0.05,
          side = 2, sd = sqrt( var(52) ), ratio = 1,
-         outtype =2 ) 
+         outtype =1 ) 
 ```
 
 # Pytanie 2

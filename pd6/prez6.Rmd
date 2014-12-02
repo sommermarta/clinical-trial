@@ -1,5 +1,5 @@
 ---
-title: " Warsztaty badawcze - projekt 6"
+title: "Warsztaty badawcze - projekt 6"
 author: Adam Biesiada, Marcin Kosiński, \newline \ Piotr Prostko, Marta Sommer
  
  

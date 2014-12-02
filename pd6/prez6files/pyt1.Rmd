@@ -1,10 +1,12 @@
 # Pytanie 1 
 
 ```{r, cache=TRUE}
-
+# metoda 1
 nBinomial( p1 = 0.45, p2 = 0.3, alpha = 0.05, n = 200, 
-           outtype = 2, sided = 2)
-bpower( p1 = 0.45, p2 = 0.3, n = 200, n1 = 100, n2 = 100, alpha = 0.05)
+           outtype = 1, sided = 2)
+# metoda 2
+bpower( p1 = 0.45, p2 = 0.3, n = 200, n1 = 100, n2 = 100, 
+        alpha = 0.05)
 
 
 ```
