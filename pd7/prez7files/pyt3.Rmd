@@ -1,7 +1,61 @@
 # Pytanie 3 
 
-```{r, cache=TRUE}
+\small
+
+
+\textcolor{blue}{Binding vs non-binding futility boundaries}:
+
+Binding - wiążąca granica obszaru ,,przyjmowania'' H0 tzn. gdy statystyka przekroczy granicę, badanie jest przerywane, a sponsor lub IDMC nie powinni kwestionować tej decyzji.
+Górna i dolna granica są zależne, więc jeśli statystyka jest poniżej, a badanie wciąż kontynuowane - $\alpha$ przekroczy ustaloną wartość. 
+
+Non-binding - jeśli granica zostanie przekroczona próba może być wciąż kontynuowana, gdyż górna granica jest obliczana niezależnie od dolnej. Daje większą elastyczność.
+
+Decydujemy się na niewiążacą granicę akceptowania H0, gdyż:
+\begin{itemize}
+\item IDMC może mieć zastrzeżenia co do np. zgromadzonych dotychczas danych, możliwości początkowego niezrównoważenia pewnego czynnika predykcyjnego w grupach z racji mniejszej próbki itp.
+\item Sponsor może chcieć dalej kontynuować próbę ze względu na potencjał marketingowy związany z niższą częstotliwością wstrzykiwań SIRENu, chęcią gromadzenia dodatkowych danych (np. o efektach w grupach).
+\end{itemize}
 
 
 
+# Pytanie 3
+
+\tiny
+
+```{r, cache=TRUE,eval=FALSE}
+gsDesign ( k = 3, test.type = 4, alpha = 0.05, beta = 0.1, timing = c( 1 ), sfu = sfLDOF, sfupar = c(0), 
+           sfl = sfLDPocock, sflpar = c(0), delta = 0  delta1 = 5, delta0 = 0, endpoint = 'normal', n.fix = n ) )
 ```
+
+\normalsize
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & n & Z & Nominal p & spend \\ 
+  \hline
+1 & 165.137 & 3.200 & 0.001 & 0.001 \\ 
+  2 & 330.274 & 2.141 & 0.016 & 0.016 \\ 
+  3 & 495.412 & 1.695 & 0.045 & 0.034 \\ 
+   \hline
+\end{tabular}
+\caption{Upper boundaries (O'Brien Fleming)}
+\end{table}
+
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & n & Z & Nominal p & spend \\ 
+  \hline
+1 & 165.137 & 0.197 & 0.422 & 0.045 \\ 
+  2 & 330.274 & 1.025 & 0.153 & 0.031 \\ 
+  3 & 495.412 & 1.695 & 0.045 & 0.024 \\ 
+   \hline
+\end{tabular}
+\caption{Lower boundaries (Pocock)}
+\end{table}
+
+
