@@ -14,13 +14,13 @@ output:
       in_header: mystyle.tex
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, warning=FALSE}
 library(knitr)
 opts_chunk$set(comment="", message=FALSE,fig.width=8, fig.height=5,tidy.opts=list(keep.blank.line=TRUE, width.cutoff=80),options(width=90))
 ```
 
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 library(gsDesign)
 library(pwr)
 library(Hmisc)

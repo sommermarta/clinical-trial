@@ -35,13 +35,13 @@ gsDesign(k=3,test.type=1,alpha=0.05,beta=0.1,sfu='OF',n.fix=n)
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{rrrrr}
+\begin{tabular}{rrrr}
   \hline
- & n & Z & Nominal p & spend \\ 
+ & n & Z & Nominal p \\ 
   \hline
-1 & 135.286 & 2.961 & 0.002 & 0.002 \\ 
-  2 & 270.572 & 2.094 & 0.018 & 0.017 \\ 
-  3 & 405.857 & 1.710 & 0.044 & 0.031 \\ 
+1 & 135.286 & 2.961 & 0.002  \\ 
+  2 & 270.572 & 2.094 & 0.018  \\ 
+  3 & 405.857 & 1.710 & 0.044  \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -55,14 +55,41 @@ gsDesign(k=3,test.type=1,alpha=0.05,beta=0.1,sfu='OF',n.fix=n,timing=time)
 
 \begin{table}[ht]
 \centering
-\begin{tabular}{rrrrr}
+\begin{tabular}{rrrr}
   \hline
- & n & Z & Nominal p & spend \\ 
+ & n & Z & Nominal p \\ 
   \hline
-1 & 204.295 & 2.450 & 0.007 & 0.007 \\ 
-  2 & 306.442 & 2.001 & 0.023 & 0.018 \\ 
-  3 & 408.589 & 1.733 & 0.042 & 0.025 \\ 
+1 & 204.295 & 2.450 & 0.007 \\ 
+  2 & 306.442 & 2.001 & 0.023  \\ 
+  3 & 408.589 & 1.733 & 0.042  \\ 
    \hline
 \end{tabular}
 \end{table}
+
+# Pytanie 2 c.d.
+
+Rekrutacja 8 pacjentów na miesiąc (różnica w liczbie miesięcy czekania na kolejne analizy przejściowe):
+
+\footnotesize
+
+```{r}
+(204-135)/8 
+(306-271)/8 
+```
+
+\normalsize
+
+Rekrutacja 20 pacjentów na miesiąc (różnica w liczbie miesięcy czekania na kolejne analizy przejściowe):
+
+\footnotesize
+
+```{r}
+(204-135)/20
+(306-271)/20 
+```
+
+# Pytanie 2 c.d.
+
+- W przypadku rekrutacji ośmiu pacjentów na miesiąc decydujemy się na plan z zadania 1a, gdyż, w przypadku ewentualnego odrzucenia hipotezy już w pierwszej analizie przejściowej, zyskujemy aż 8 miesięcy. 
+- W przypadku rekrutacji dwudziestu pacjentów na miesiąc decydujemy się na plan z zadania 2, gdyż ta różnica nie jest już tak duża (3 miesiące), więc warto oprzeć pierwszą analizę na większej próbce (50% pacjentów, a nie tylko 30%). 
 

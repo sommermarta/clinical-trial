@@ -83,7 +83,7 @@ delta <- sapply(theta, function(theta){
 ```
 
 
-````{r, echo=FALSE, fig.width=6, fig.height=3.2}
+````{r, echo=FALSE, fig.width=6, fig.height=3.2, warning=FALSE}
 
 wykres <- data.frame(theta = theta, delta = delta)
 library(ggplot2)

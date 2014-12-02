@@ -6,7 +6,7 @@
 \textcolor{blue}{Binding vs non-binding futility boundaries}:
 
 Binding - wiążąca granica obszaru ,,przyjmowania'' $\mathbb{H}_0$ tzn. gdy statystyka przekroczy granicę, badanie jest przerywane, a sponsor lub IDMC nie powinni kwestionować tej decyzji.
-Górna i dolna granica są zależne, więc jeśli statystyka jest poniżej, a badanie wciąż kontynuowane - $\alpha$ przekroczy ustaloną wartość. 
+Górna i dolna granica są zależne, więc jeśli statystyka jest poniżej dolnej granicy, a badanie wciąż kontynuowane - $\alpha$ przekroczy ustaloną wartość. 
 
 Non-binding - jeśli granica zostanie przekroczona próba może być wciąż kontynuowana, gdyż górna granica jest obliczana niezależnie od dolnej. Daje większą elastyczność.
 
