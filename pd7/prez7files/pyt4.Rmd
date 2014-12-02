@@ -1,8 +1,8 @@
 # Pytanie 4 
 
-- Udostępnimy IDMC \underline{wszystkie} dane tzn. status próby (tempo rekrutacji, czas trwania próby), dane o różnicach w skuteczości leczenia SIREN-em i LUCENTIS-em oraz dane dotyczące efektów ubocznych. W skład komisji wchodzą eksperci z różnych dyscyplin - w ten sposób każdy znajdzie coś dla siebie. Ukrywnie części danych wzbudza również podejrzenia o braku rzetelności. 
+- Udostępnimy IDMC \underline{wszystkie} dane tzn. status próby (tempo rekrutacji, czas trwania próby), dane o różnicach w skuteczości leczenia SIREN-em i LUCENTIS-em oraz dane dotyczące efektów ubocznych. W skład komisji wchodzą eksperci z różnych dyscyplin - w ten sposób każdy znajdzie coś dla siebie. Ukrywanie części danych wzbudza również podejrzenia o braku rzetelności. 
 
-- \underline{Nie będziemy zaślepiać} danych o efektach ubocznych (w razie, gdyby SIREN okazał się mocno toksyczny, komisja powinna o tym wiedzieć) oraz o statusie próby, gdyż mają one wpływ na wnioskowanie o rzetelności pórby, a nie na wnioskowanie o różnicach w efektach leczenia. Natomiast dane o efektach leczenia \underline{zaślepiamy}, żeby opinia ekspertów nie była obciążona ich własnymi przekonaniami.
+- \underline{Nie będziemy zaślepiać} danych o efektach ubocznych (w razie, gdyby SIREN okazał się mocno toksyczny, komisja powinna o tym wiedzieć) oraz o statusie próby, gdyż mają one wpływ na wnioskowanie o rzetelności próby, a nie na wnioskowanie o różnicach w efektach leczenia. Natomiast dane o efektach leczenia \underline{zaślepiamy}, żeby opinia ekspertów nie była obciążona ich własnymi przekonaniami.
 
 # Pytanie 4 c.d.
 

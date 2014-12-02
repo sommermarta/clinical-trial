@@ -25,4 +25,4 @@ gsD.1b <- gsDesign(k=3,test.type=1,alpha=0.05,
 \small
 
 Rekomendujemy strategię O'Brien-Fleminga jako bardziej konserwatywną w początkowych analizach przejściowych. Ze względu na dość dużą wariancję różnicy ostrości wzroku u pacjentów, chcemy zachować większy poziom istotności dla testu na końcu próby. 
-Dodatkowo SIREN jest podawany co 3 miesiące, więc szansa wykrycia efektu w trakcie trwania próby jest niewielka chyba, że będzie on naprawdę wyraźny.
+
