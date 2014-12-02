@@ -1,6 +1,68 @@
 # Pytanie 2 
 
-```{r, cache=TRUE}
+\footnotesize
 
+```{r, cache=TRUE, eval=FALSE, echo=FALSE}
+
+n <- ceiling(nNormal(delta1=5,sd=17,alpha=0.05,beta=0.1,sided=1))
+
+# bez timingu:
+x <- gsDesign(k=3,test.type=1,alpha=0.05,beta=0.1,sfu='OF',n.fix=n)
+y <- cbind(x$n.I,x$upper$bound, 1-pnorm(x$upper$bound), x$upper$spend )
+y <- as.data.frame(y)
+names(y) <- c("n", "Z", "Nominal p", "spend")
+
+library(xtable)
+xtable(y, digits=3)
+
+# z timingiem
+time <- c(0.5,0.75,1)
+n <- ceiling(nNormal(delta1=5,sd=17,alpha=0.05,beta=0.1,sided=1))
+x <- gsDesign(k=3,test.type=1,alpha=0.05,beta=0.1,sfu='OF',n.fix=n,timing=time)
+y <- cbind(x$n.I,x$upper$bound, 1-pnorm(x$upper$bound), x$upper$spend )
+y <- as.data.frame(y)
+names(y) <- c("n", "Z", "Nominal p", "spend")
+
+xtable(y, digits=3)
 
 ```
+
+```{r, cache=TRUE, eval=FALSE}
+n <- ceiling(nNormal(delta1=5,sd=17,alpha=0.05,beta=0.1,sided=1))
+# bez timingu:
+gsDesign(k=3,test.type=1,alpha=0.05,beta=0.1,sfu='OF',n.fix=n)
+```
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & n & Z & Nominal p & spend \\ 
+  \hline
+1 & 135.286 & 2.961 & 0.002 & 0.002 \\ 
+  2 & 270.572 & 2.094 & 0.018 & 0.017 \\ 
+  3 & 405.857 & 1.710 & 0.044 & 0.031 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+```{r, cache=TRUE, eval=FALSE}
+# z timingiem:
+time <- c(0.5,0.75,1)
+gsDesign(k=3,test.type=1,alpha=0.05,beta=0.1,sfu='OF',n.fix=n,timing=time)
+```
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+  \hline
+ & n & Z & Nominal p & spend \\ 
+  \hline
+1 & 204.295 & 2.450 & 0.007 & 0.007 \\ 
+  2 & 306.442 & 2.001 & 0.023 & 0.018 \\ 
+  3 & 408.589 & 1.733 & 0.042 & 0.025 \\ 
+   \hline
+\end{tabular}
+\end{table}
+

@@ -1,0 +1,14 @@
+base
+knitr
+ggplot2
+xtable
+stringr
+RUnit
+plyr
+gsDesign
+pwr
+lattice
+survival
+Formula
+Hmisc
+ggthemes
